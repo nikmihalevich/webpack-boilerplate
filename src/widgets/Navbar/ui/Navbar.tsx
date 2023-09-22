@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
+import { BugButton } from '@/widgets/BugButton';
 
 import cls from './Navbar.module.scss';
 
@@ -19,6 +20,7 @@ export const Navbar = (props: NavbarProps) => {
 			<Link to="/">Home</Link>
 			<Link to="/about">About</Link>
 			<ThemeSwitcher />
+			<BugButton />
 		</nav>
 	);
 };
