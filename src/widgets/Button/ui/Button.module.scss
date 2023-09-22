@@ -1,0 +1,96 @@
+.Button {
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+
+    .addonLeft svg,
+    .addonRight svg {
+        color: var(--secondary-color);
+    }
+
+    &:hover {
+        color: var(--secondary-color);
+
+        .addonLeft svg,
+        .addonRight svg {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.clear {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.filled {
+    background: var(--bg-color);
+    border: none;
+    outline: none;
+    border-radius: 34px;
+}
+
+.outline {
+    background: none;
+    outline: none;
+    border-radius: 34px;
+
+    &:hover {
+        border: 2px solid var(--secondary-color);
+    }
+
+    &.normal {
+        border: 2px solid var(--secondary-color);
+    }
+
+    &.error {
+        border: 2px solid var(--secondary-color);
+    }
+
+    &.success {
+        border: 2px solid var(--secondary-color);
+    }
+}
+
+.square {
+    padding: 0;
+}
+
+.square.m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.square.l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.m {
+    font: var(--font-m);
+}
+
+.l {
+    font: var(--font-l);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft,
+.addonRight {
+    display: flex;
+}
