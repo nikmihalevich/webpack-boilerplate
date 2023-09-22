@@ -1,6 +1,7 @@
 import React from 'react';
-import {useTheme} from "app/providers/ThemeProvider";
+
 import {AppRouter} from "app/providers/router";
+import {useTheme} from "app/providers/ThemeProvider";
 import './styles/index.scss'
 import {Navbar} from "components/Navbar";
 

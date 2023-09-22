@@ -1,7 +1,9 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+
 import {ThemeSwitcher} from "components/ThemeSwitcher";
+import {Link} from "react-router-dom";
 import {classNames} from "shared/lib/classNames/classNames";
+
 import cls from './Navbar.module.scss'
 
 interface NavbarProps {
@@ -13,8 +15,8 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <nav className={classNames(cls.Navbar, {}, [className])}>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/about'}>About</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
             <ThemeSwitcher />
         </nav>
     );
