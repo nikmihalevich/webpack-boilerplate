@@ -8,13 +8,14 @@ interface PageErrorProps {
 
 export const PageError = ({ className }: PageErrorProps) => {
 	const reloadPage = () => {
+		// eslint-disable-next-line no-restricted-globals
 		location.reload();
 	};
 
 	return (
 		<div className={classNames(cls.PageError, {}, [className])}>
 			<p>Произошла непредвиденная ошибка</p>
-			<button type={'button'} onClick={reloadPage}>
+			<button type="button" onClick={reloadPage}>
 				Обновить страницу
 			</button>
 		</div>

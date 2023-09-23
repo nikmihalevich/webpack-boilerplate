@@ -16,7 +16,7 @@ export const BugButton = () => {
 	}, [error]);
 
 	return (
-		<button type={'button'} onClick={onThrow}>
+		<button type="button" onClick={onThrow}>
 			Bug!
 		</button>
 	);

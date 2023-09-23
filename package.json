@@ -14,7 +14,8 @@
     "prettier": "npx prettier --write **/*.{ts,tsx,json}",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
@@ -92,7 +93,8 @@
     "webpack": "^5.88.2",
     "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "react": "^18.2.0",
